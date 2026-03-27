@@ -11,7 +11,7 @@
             font-family: 'Barlow', sans-serif;
         }
     </style>
-    <title>Pizzaria IL Forno</title>
+    <title>Pizzaria Mamma mia</title>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -20,7 +20,7 @@
         <div class="max-w-5xl mx-auto px-4">
             <div class="flex justify-between items-center">
                 <a href="#">
-                    <img src="./assets/images/logoPizza.png" alt="Logo Pizzaria IL Forno" class="h-16">
+                    <img src="./assets/images/logoPizza.png" alt="Logo Pizzaria Mamma mia" class="h-16">
                 </a>
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="#"
@@ -63,14 +63,13 @@
         <section class="flex flex-col md:flex-row justify-center items-center w-full text-center gap-6 py-8 px-4"
             aria-labelledby="slogan">
             <div class="w-full md:w-1/2">
-                <h2 id="slogan" class="text-3xl md:text-4xl font-semibold mb-4">A Autêntica Pizza Italiana Entregue Na
-                    Sua Porta</h2>
+                <h2 id="slogan" class="text-3xl md:text-4xl font-semibold mb-4">A verdadeira Pizza Italiana</h2>
                 <p><a href="#cardapio"
                         class="inline-block border border-gray-800 rounded-xl px-4 py-2 text-base hover:bg-gray-100 transition">Ver
                         Cardápio</a></p>
             </div>
             <figure class="w-full md:w-1/2">
-                <img src="./assets/images/pizzaBanner_PNG.png" alt="Imagem de uma pizza deliciosa" class="mx-auto transition-all hover:scale-119 hover:rotate-45">
+                <img src="./assets/images/pizzaBanner_PNG.png" alt="Imagem de uma pizza deliciosa" class="mx-auto transition-all hover:scale-110 hover:rotate-45">
             </figure>
         </section>
 
@@ -105,15 +104,15 @@
     </main>
 
     <footer class="bg-gray-800 text-white text-center py-8 px-4 mt-10">
-        <h3 class="text-lg font-semibold mb-2">Pizzaria IL Forno</h3>
+        <h3 class="text-lg font-semibold mb-2">Pizzaria Mamma mia</h3>
         <address class="not-italic text-sm mb-1">Rua Prof. Toledo, 500, centro — Sorocaba</address>
-        <p class="text-sm mb-1">Contato: (15) 9876-4322</p>
+        <p class="text-sm mb-1">Contato: (69) 4002-8922</p>
         <p class="text-sm text-gray-400">Aberto terça a domingo, 18h às 23h30 · Fechado às segundas</p>
     </footer>
 
-    <a href="https://wa.me/551530887654" target="_blank" aria-label="WhatsApp IL Forno"
+    <a href="https://wa.me/551530887654" target="_blank" aria-label="WhatsApp Mamma mia"
         class="fixed bottom-24 right-5 w-14 h-14 z-50 active:scale-95 transition-all">
-        <img src="./assets/images/whatsapp.png" alt="WhatsApp IL Forno" class="w-full h-full">
+        <img src="./assets/images/whatsapp.png" alt="WhatsApp Mamma mia" class="w-full h-full">
     </a>
 
     <div id="detalhes-modal"
@@ -459,7 +458,7 @@
 
         function fecharPedido() {
             if (carrinho.length === 0) return;
-            let msg = '🍕 *Pedido - Pizzaria IL Forno*\n\n';
+            let msg = '🍕 *Pedido - Pizzaria Mamma mia*\n\n';
             carrinho.forEach(item => {
                 msg += `• ${item.nome} x${item.quantidade} — ${(item.preco * item.quantidade).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n`;
             });
