@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ca3c3f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/images/logoPizza.png">
     <link rel="icon" type="image/png" href="assets/images/logoPizza.png">
+    <meta name="msapplication-TileImage" content="./assets/images/logoPizza.png">
+    <meta property="og:image" content="./assets/images/logoPizza.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -466,7 +473,15 @@
             const total = carrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
             msg += `\n*Total: ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}*`;
 
-            window.open(`https://wa.me/551530887654?text=${encodeURIComponent(msg)}`, '_blank');
+            window.open(`https://wa.me/5515996826049?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        if('serviceWorker' in navigator){
+            window.addEventListener('load', () =>{
+                navigator.serviceWorker.register('./sw.js')
+                .then(reg=>console.log("Service Worker Registrado no Porto!", reg))
+                .catch(err=>console.log("Erro ao preparar o sushi", err));
+            })
         }
     </script>
 </body>

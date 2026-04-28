@@ -1,0 +1,17 @@
+{
+    "name": "Pizzaria",
+    "short_name": "Pizzaria",
+    "start_url": ".",
+    "display": "standalone",
+    "backgroud_color": "#ffffff",
+    "theme_color": "#ca3c3f",
+    "description": "Cardapio digital Pizzaria",
+    "icons": [
+    {
+        "src": "assets/images/logoPizza.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    }
+    ]
+}
